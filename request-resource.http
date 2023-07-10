@@ -1,4 +1,6 @@
-@server = https://insensebot-turbo-space-cod-jxrq5g9747425jp9-8080.preview.app.github.dev
+###@server = https://insensebot-turbo-space-cod-jxrq5g9747425jp9-8080.preview.app.github.dev
+###@server = https://semana8-practica.onrender.com
+@server = https://insensebot-turbo-space-cod-jxrq5g9747425jp9-8828.preview.app.github.dev
 
 ###
 GET {{server}}/
@@ -16,7 +18,7 @@ GET {{server}}/cursos?size=2
 GET {{server}}/cursos?size=2&page=1
 
 ###
-GET {{server}}/cursos?sort=creditos.asc
+GET {{server}}/cursos?sort=creditos.desc
 
 ###
 POST {{server}}/cursos
@@ -38,3 +40,20 @@ GET {{server}}/profile/cursos
 
 ###
 GET {{server}}/cursos/search/findByNombre?nombre=Inteligencia+Artificial
+
+############ Carrera
+GET {{server}}/carreras
+###
+POST {{server}}/carreras
+Content-Type: application/json
+
+{"nombre": "Desarrollo de Software"}
+
+###
+GET {{server}}/cursos/2/carrera
+
+###
+GET {{server}}/carreras/1
+
+###
+GET {{server}}/carreras/1/cursos
