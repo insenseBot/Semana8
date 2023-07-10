@@ -1,4 +1,6 @@
-@server = https://insensebot-turbo-space-cod-jxrq5g9747425jp9-8080.preview.app.github.dev
+###@server = https://insensebot-turbo-space-cod-jxrq5g9747425jp9-8080.preview.app.github.dev
+
+@server = https://semana8-practica.onrender.com
 @apiserver = {{server}}/api/curso
 
 GET {{server}}/
@@ -16,8 +18,8 @@ GET {{apiserver}}/listar
 POST {{apiserver}}/nuevo
 Content-Type: application/x-www-form-urlencoded
 
-nombre=Algoritmos
-&creditos=3
+nombre=Inteligencia Artificial
+&creditos=5
 
 ###
 DELETE {{apiserver}}/eliminar

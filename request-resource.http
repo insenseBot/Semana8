@@ -1,0 +1,40 @@
+@server = https://insensebot-turbo-space-cod-jxrq5g9747425jp9-8080.preview.app.github.dev
+
+###
+GET {{server}}/
+
+###
+GET {{server}}/cursos
+
+###
+GET {{server}}/cursos/52
+
+###
+GET {{server}}/cursos?size=2
+
+###
+GET {{server}}/cursos?size=2&page=1
+
+###
+GET {{server}}/cursos?sort=creditos.asc
+
+###
+POST {{server}}/cursos
+Content-Type: application/json
+
+{"nombre": "Compiladores", "creditos": 5}
+
+###
+DELETE {{server}}/cursos/52
+
+###
+PATCH {{server}}/cursos/52
+Content-Type: application/json
+
+{"creditos": 5}
+
+###
+GET {{server}}/profile/cursos
+
+###
+GET {{server}}/cursos/search/findByNombre?nombre=Inteligencia+Artificial
